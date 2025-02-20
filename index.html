@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>merkado libre</title>
+    <link rel="icon" href="merkado.png">
+    <script src="https://kit.fontawesome.com/57faba85b1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--esto seria la navbar(barra de navegacíon) principal-->
+    <header class="header">
+        <div class="logo">
+           <a href="index.html"> <img src="merkado.png" alt="logo merkadolibre"></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                 </div>                   
+            </ul>   
+        </nav>
+        <a href="#">DISFRUTE DE SU COMPRA :)</a>
+    </header>
+    <!--aca va el modal-->
+    <header class="header-b">
+        <nav class="nav-b">
+            <ul>
+                <div class="boton-modal">
+                    <label for="btn-modal">
+                        <span class="span-a">
+                            enviar a
+                        </span>
+                        <span class="span-b">
+                            capital federal 
+                        </span>
+                    </label>
+                </div>
+                <input type="checkbox" id="btn-modal">
+                <div class="container-modal">
+                    <div class="content-modal">
+                        <div class="superior">
+                            <h4>Elegí dónde recibir tus compras</h4>
+                            <div class="btn-cerrar">
+                                <label for="btn-modal">
+                                    X
+                                </label>
+                            </div>
+                        </div>
+                        <p>Podrás ver costos y tiempos de entrega precisos en todo lo que busques.</p>
+                        <span class="spon">codigo postal</span>
+                        <form action="d-flex" role="search">
+                            <div>
+                            <input class="ingresar-code" type="text" placeholder="Ingresar codigo postal" aria-label="text" maxlength="4" required>
+                            <input type="submit" value="usar" class="usar" for="ingresar-code">
+                            <span class="spin"><button class="btn-code">No se mi codigo</button></span>
+                            </div>
+                        </form>
+                    </div>
+                    <label for="btn-modal" class="cerrar-modal"></label>
+                </div>
+                <!--termina modal-->
+                <!--Empieza una lista ordinaria-->
+                <ul class="menu">
+                    <li><a href="#">Categorias</a>
+                        <ul>
+                            <li><a href="#" class="cate">Vehiculo</a></li>
+                            <li><a href="#" class="cate">Hogar y Muebles</a></li>
+                            <li><a href="#" class="cate"> Moda</a></li>
+                            <li><a href="#" class="cate">Juegos y Juguetes</a></li>
+                            <li><a href="#" class="cate">Bebés</a></li>
+                         </ul>
+                    </li>   
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Cupones</a></li>
+                    <li><a href="#">Supermercado</a></li>
+                    <li><a href="#">Moda</a></li>
+                    <li><a href="#">Mercado play</a></li>
+                    <li><a href="#">vender</a></li>
+                    <li><a href="#">ayuda</a></li>
+                </ul>   
+            <!--termina lista ordinaria-->
+            <!--empieza lista ordinaria del usuario-->
+            <div class="int-usuario">
+            <ul class="usuario">
+                <li><a href="index2.html">Creá tu cuenta</a></li>
+                <li><a href="index3.html">Ingresá</a></li>
+                <li><a href="#">Mis compras</a></li>
+                <li><button><i class="fa-solid fa-cart-shopping"></i></button></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <!--termina lista ordinaria del usuario-->
+<!--empieza un carrusel-->
+    <div class="slider-box">
+        <ul>
+            <li><img src="images/clases.png" alt="vueltaClase"></li>
+            <li><img src="images/dome.png" alt="deporte"></li>
+            <li><img src="images/vehi.png" alt="jardin"></li>
+        </ul>
+    </div>
+
+<!--termina un carrusel-->
+<!--empiezan las tarjetas (3)-->
+<div class="card">  
+    <button class="btn-a">
+        <div class="boton">
+        <h5>Envío gratis</h5>
+        <img src="regalo.png" alt="regalo">
+        <p>Beneficio por ser tu primera compra</p>
+        <input type="submit" value="Mostrar productos">
+        </div>
+    </button>
+    <button class="btn-b">
+        <div class="botun">
+            <h5>menos de $20.000</h5>
+            <img src="baratoMinimalista.png" alt="barato">
+            <p>Descubrí productos con precios bajos</p>
+            <input type="submit" value="Mostrar productos">
+        </div>
+    </button>
+    <button class="btn-c">
+        <div class="buton">
+            <h3>Ingresá tu ubicacion</h3>
+            <img src="iconoMaps.png" alt="maps">
+            <p>consultá costos y tiempos de entrega</p>
+            <input type="submit" value="Ingresar ubicacion">
+        </div>
+    </button>
+</div>
+<!--empieza tarjeta de productos-->
+<div class="ventas">
+    <a href="index4.html">
+        <button class="venta-a">
+        <div class="prod-a">
+            <img src="images/chain.png" alt="cadena de don rouch">
+            <h3>$1.000.000</h3>
+            <p>envio gratis</p><span>por ser tu primera compra</span>
+        </div>
+        </button>
+    </a>
+    <a href="#">
+        <button class="venta-b">
+        <div class="prod-b">
+            <img src="images/pelota.png" alt="pelota de copa america 2024">
+            <h3>$50.000</h3>
+            <p>envio gratis</p><span>por ser tu primera compra</span>
+        </div>
+        </button>
+    </a>
+    <a href="#">
+        <button class="venta-c">
+        <div class="prod-c">
+            <img src="images/ps5.png" alt="play station 5">
+            <h3>$1.299.999</h3>
+            <p>envio gratis</p><span>por ser tu primera compra</span>
+        </div>
+        </button>
+    </a>
+    <a href="#">
+        <button class="venta-d">
+        <div class="prod-d">
+            <img src="images/vans.png" alt="zapatillas vans">
+            <h3>$59.999</h3>
+            <p>envio gratis</p><span>por ser tu primera compra</span>
+        </div>
+        </button>
+    </a>
+</div>
+<!--termina tarjetas de productos-->
+<footer class="footer">
+    <p>
+        Copyright © 2025 Samuel Perfumo
+    </p>
+</footer>
+</body>
+</html>

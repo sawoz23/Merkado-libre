@@ -1,0 +1,605 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+body{
+    background-color: #e8eaeb;
+}
+.header{
+    background-color: 	#eed130 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 5px 10%;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 60px;
+    width: 100px;
+    transition: all 0.3s;
+}
+.header a{
+    font-size: 700;
+    color: #171576;
+    text-decoration: none;
+}
+.header a:hover{
+    color: #73C2FB;
+}
+
+.header button{
+    font-weight: 700;
+    padding: 9px 15px;
+    background:  #e8eaeb;
+    border: none;
+    cursor: pointer;
+    border-left: 1px solid #dbdbdb;
+    transition: all 0.3s ease 0s;
+}
+
+.header input{
+    background: #474e4b;
+    width: 500px;
+    border: none;
+    right: 0;
+    top: 0;
+}
+.header form{
+    display: flex;
+}
+
+/*empieza modal*/
+.header-b{
+    height: 10px;
+}
+
+.boton-modal{
+    background-color: #eed130 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10px;
+    margin-left: 130px; 
+}
+h4{
+    width: 500px;
+}
+.boton-modal label{
+    padding: 10px 10px;
+    color: black;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    text-decoration: #FED85D;
+    display: block;
+    margin-top: 40px;
+    width: 120px;
+}
+.boton-modal .span-a{
+    position: relative;
+    font-size: 14px;
+}
+
+.boton-modal .span-b{
+    position: relative;
+    font-size: 18px;
+}
+
+#btn-modal{
+    display: none;
+}
+
+.container-modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+        background-color: rgba(40, 40, 40, 0.5);
+         top: 0; left: 0; 
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 100; 
+}
+
+.content-modal{
+    width: 700px;
+    height: 237px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 3px;
+}
+.superior{
+    display: flex;
+}
+
+h3{
+    margin-right: 50px;
+}
+.content-modal p{
+    padding: 15px 0px;
+    color: #474e4b;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #dbdbdb;
+    border-top: 1px solid #dbdbdb;
+}
+.content-modal .spon{
+    color: #474e4b; 
+}
+
+.superior .btn-cerrar{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.superior .btn-cerrar label{
+    padding: 7px 7px;
+    color: #73C2FB;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+#btn-modal:checked ~ .container-modal{
+    display: flex;
+}
+
+.cerrar-modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+}
+
+.header-b form{
+    display: flex;
+}                  
+.header-b input{
+    color: black;
+    background-color: white;
+    height: 50px;
+    right: 0; top: 0;
+    border-radius: 5px 5px 5px 5px;
+    border: 2px solid rgb(206, 206, 206);
+    font-size: 20px;
+}
+.header-b .usar{
+    background-color: #e8eaeb; 
+    border: none;
+    cursor: pointer;
+    position: relative;
+    font-size: 14px;
+}
+
+.header-b .btn-code{
+    padding: 5px 17px;
+    font-size: 15px;
+    margin-left: 5px;
+    border: none;
+    background-color: white;
+    color: #73C2FB;
+    cursor: pointer;
+}
+
+.header-b .ingresar-code{
+    font-size: 20px;
+}
+/*termina modal*/
+/*empieza lista ordinaria*/
+
+.header-b .nav-b{
+    display: flex;
+    background-color: #eed130;
+    justify-content: space-between;
+}
+
+.menu{
+    list-style: none;
+    background-color: #eed130;
+    padding: 5px;
+    margin-left: 260px;
+}
+
+.menu li{
+    position: relative;
+    display: inline-block;
+}
+
+.menu li:hover ul{
+    display: block;
+    position: absolute;
+    width: 420px;
+
+}
+.menu li:hover .cate{
+    border-left: 1px solid black;
+}
+
+.menu ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #474e4b;
+}
+
+.menu ul li a{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #e8eaeb;
+}
+
+.menu li a{
+    text-decoration: none;
+    padding: 5px;
+}
+.menu a{
+    font-size: 15px;
+}
+/*termina lista ordinaria*/
+/*empieza lista ordinaria del usuario*/
+.usuario{
+    display: flex;
+    list-style: none;
+    width: 300px;
+}
+
+.usuario li{
+    position: relative;
+    display: flex;
+    background-color: #eed130;
+    left: 900px;
+    top: -30px;
+}
+.usuario a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.usuario button{
+    background-color: #eed130;    
+    border: 0;
+    padding: 5px;
+    cursor: pointer;
+}
+/* termina lista ordinario del ususario*/
+/*empieza slider box*/
+.slider-box{
+    position: relative;
+    width: 1349px;
+    height: auto;
+    margin-top: 70px;
+    margin-left: 0;
+    overflow: hidden;
+}
+
+.slider-box ul{
+    position: relative;
+    list-style: none;
+    display: flex;
+    animation: movimiento_slider 15s infinite alternate ease-in-out;
+}
+
+.slider-box img{
+    position: relative;
+    width: 1349px;
+    height: auto;
+}
+
+@keyframes movimiento_slider{
+    0%{ transform: translateX(0%)}
+    20%{ transform: translateX(0%)}
+
+    45%{ transform: translateX(-100%)}
+    50%{ transform: translateX(-100%)}
+
+    70%{ transform: translateX(-200%)}
+    100%{ transform: translateX(-200%)}
+}
+/*termina slider box*/
+/*empieza tarjetas*/
+.card{
+    height: 310px;
+}
+/*empieza tarjeta (1)*/
+.card .btn-a{
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 300px;
+    background-color: white;
+    box-shadow: #000 10px 13px 37px 10px;
+}
+
+.boton{
+    height: 260px;
+    width: 180px;
+}
+
+.boton:hover p{
+    color: rgb(32, 32, 255);
+}
+.boton h5{
+    padding: 20px;
+    display: flex;
+}
+
+.boton img{
+    width: 39%;
+}
+
+.boton p{
+    font-size: 13px;
+    color: #7a7a7a;
+}
+
+.boton input{
+    font-size: 15px;
+    border: 0;
+    background-color: #73c2fb;
+    color: #2918c4;
+    border-radius: 3px 3px 3px 3px;
+    margin-top: 35px;
+    height: 17px;
+    
+}
+
+.boton:hover input{
+    background-color: #39a5f1;
+    color: #120580;
+}
+
+/*termina tarjeta (1)*/
+/*empieza tarjeta (2)*/
+.card .btn-b{
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 80px;
+    background-color: white;
+    box-shadow: #000 10px 13px 37px 10px;
+}
+
+.botun{
+    height: 260px;
+    width: 180px;
+}
+
+.botun:hover p{
+    color: rgb(32, 32, 255);
+}
+.botun h4{
+    padding: 20px;
+    display: flex;
+}
+
+.botun img{
+    width: 50%;
+    padding: 10px;
+}
+
+.botun p{
+    font-size: 13px;
+    color: #7a7a7a;
+}
+
+.botun input{
+    font-size: 15px;
+    border: 0;
+    background-color: #73c2fb;
+    color: #2918c4;
+    border-radius: 3px 3px 3px 3px;
+    margin-top: 55px;
+    height: 17px;
+    
+}
+
+.botun:hover input{
+    background-color: #39a5f1;
+    color: #120580;
+}
+/*termina tarjeta (2)*/
+/*empieza tarjeta (3)*/
+.card .btn-c{
+    display: inline-block;
+    cursor: pointer;
+    background-color: white;
+    margin-left: 80px;
+    box-shadow: #000 10px 13px 37px 10px;
+}
+
+.buton{
+    height: 260px;
+    width: 180px;
+}
+
+.buton:hover p{
+    color: rgb(32, 32, 255);
+}
+.buton h4{
+    padding: 20px;
+    display: flex;
+}
+
+.buton img{
+    width: 39%;
+}
+
+.buton p{
+    font-size: 13px;
+    color: #7a7a7a;
+}
+
+.buton input{
+    font-size: 15px;
+    border: 0;
+    background-color: #73c2fb;
+    color: #2918c4;
+    border-radius: 3px 3px 3px 3px;
+    margin-top: 50px;
+    height: 17px;
+    
+}
+
+.buton:hover input{
+    background-color: #39a5f1;
+    color: #120580;
+}
+/*termina tarjeta (3)*/
+/*termina tarjetas*/
+/*empieza tarjetas de productos en venta*/
+.ventas{
+    width: 485px;
+    margin-left: 400px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+
+}
+/*empieza tarjeta producto (1)*/
+.ventas .venta-a{
+    display: inline-block;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: #000 10px 13px 37px 10px;
+    border: none;
+    border-radius: 3px;
+    width: 200px;
+}
+
+.venta-a h3{
+    color: black;
+    display: flex;
+    padding: 5px;
+}
+
+.venta-a p{
+    color: green;
+    display: flex;
+    font-size: 15px;
+}
+
+.venta-a span{
+    font-size: 15px;
+    display: flex;
+}
+/*termina tarjeta producto (1)*/
+/*empieza tarjeta producto (2)*/
+.ventas .venta-b{
+    display: inline-block;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: #000 10px 13px 37px 10px;
+    height: 335px;
+    border: none;
+    border-radius: 3px;
+    margin-left: 80px;
+
+}
+
+.venta-b img{
+    margin-bottom: 60px;
+    margin-top: 50px;
+}
+
+.venta-b h3{
+    display: flex;
+    padding: 5px;
+}
+
+.venta-b p{
+    color: green;
+    display: flex;
+    font-size: 15px;
+}
+
+.venta-b span{
+    font-size: 15px;
+    display: flex;
+}
+/*termina tarjeta de producto (2)*/
+/*empieza tarjeta de producto (3)*/
+.ventas .venta-c{
+    display: inline-block;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: #000 10px 13px 37px 10px;
+    height: 335px;
+    border-radius: 3px;
+    margin-top: 50px;
+    border: none;
+}
+
+.venta-c img{
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.venta-c h3{
+    display: flex;
+    padding: 5px;
+}
+
+.venta-c p{
+    color: green;
+    display: flex;
+    font-size: 15px;
+}
+
+.venta-c span{
+    display: flex;
+    font-size: 15px;
+}
+
+/*termina tarjeta de producto (3)*/
+/*empieza tarjeta de producto (4)*/
+.ventas .venta-d{
+    display: inline-block;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: #000 10px 13px 37px 10px;
+    height: 335px;
+    border-radius: 3px;
+    margin-left: 80px;
+    border: none;
+}
+
+.venta-d img{
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+.venta-d h3{
+    display: flex;
+    padding: 5px;
+}
+.venta-d p{
+    color: green;
+    display: flex;
+    font-size: 15px;
+}
+.venta-d span{
+    display: flex;
+    font-size: 15px;
+}
+/*termina tarjeta producto (4)*/
+/*empieza footer*/
+footer{
+    background-color: #eed130;
+    padding: 20px;
+    display: flex;
+}
+
+.footer p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 500px;
+}

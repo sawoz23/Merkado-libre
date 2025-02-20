@@ -1,0 +1,403 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #e8eaeb;
+}
+.header{
+    background-color: 	#eed130 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 5px 10%;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 60px;
+    width: 100px;
+    transition: all 0.3s;
+}
+.header a{
+    font-size: 700;
+    color: #171576;
+    text-decoration: none;
+}
+.header a:hover{
+    color: #73C2FB;
+}
+
+.header button{
+    font-weight: 700;
+    padding: 9px 15px;
+    background:  #e8eaeb;
+    border: none;
+    cursor: pointer;
+    border-left: 1px solid #dbdbdb;
+    transition: all 0.3s ease 0s;
+}
+
+.header input{
+    background: #474e4b;
+    width: 500px;
+    border: none;
+    right: 0;
+    top: 0;
+}
+.header form{
+    display: flex;
+}
+
+/*empieza modal*/
+.header-b{
+    height: 10px;
+}
+
+.boton-modal{
+    background-color: #eed130 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10px;
+    margin-left: 130px; 
+}
+h4{
+    width: 500px;
+}
+.boton-modal label{
+    padding: 10px 10px;
+    color: black;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    text-decoration: #FED85D;
+    display: block;
+    margin-top: 40px;
+    width: 120px;
+}
+.boton-modal .span-a{
+    position: relative;
+    font-size: 14px;
+}
+
+.boton-modal .span-b{
+    position: relative;
+    font-size: 18px;
+}
+
+#btn-modal{
+    display: none;
+}
+
+.container-modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+        background-color: rgba(40, 40, 40, 0.5);
+         top: 0; left: 0; 
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 100; 
+}
+
+.content-modal{
+    width: 700px;
+    height: 237px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 3px;
+}
+.superior{
+    display: flex;
+}
+
+h3{
+    margin-right: 50px;
+}
+.content-modal p{
+    padding: 15px 0px;
+    color: #474e4b;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #dbdbdb;
+    border-top: 1px solid #dbdbdb;
+}
+.content-modal .spon{
+    color: #474e4b; 
+}
+
+.superior .btn-cerrar{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.superior .btn-cerrar label{
+    padding: 7px 7px;
+    color: #73C2FB;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+#btn-modal:checked ~ .container-modal{
+    display: flex;
+}
+
+.cerrar-modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+}
+
+.header-b form{
+    display: flex;
+}                  
+.header-b input{
+    color: black;
+    background-color: white;
+    height: 50px;
+    right: 0; top: 0;
+    border-radius: 5px 5px 5px 5px;
+    border: 2px solid rgb(206, 206, 206);
+    font-size: 20px;
+}
+.header-b .usar{
+    background-color: #e8eaeb; 
+    border: none;
+    cursor: pointer;
+    position: relative;
+    font-size: 14px;
+}
+
+.header-b .btn-code{
+    padding: 5px 17px;
+    font-size: 15px;
+    margin-left: 5px;
+    border: none;
+    background-color: white;
+    color: #73C2FB;
+    cursor: pointer;
+}
+
+.header-b .ingresar-code{
+    font-size: 20px;
+}
+/*termina modal*/
+/*empieza lista ordinaria*/
+
+.header-b .nav-b{
+    display: flex;
+    background-color: #eed130;
+    justify-content: space-between;
+}
+
+.menu{
+    list-style: none;
+    background-color: #eed130;
+    padding: 5px;
+    margin-left: 260px;
+}
+
+.menu li{
+    position: relative;
+    display: inline-block;
+}
+
+.menu li:hover ul{
+    display: block;
+    position: absolute;
+    width: 420px;
+
+}
+.menu li:hover .cate{
+    border-left: 1px solid black;
+}
+
+.menu ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #474e4b;
+}
+
+.menu ul li a{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #e8eaeb;
+}
+
+.menu li a{
+    text-decoration: none;
+    padding: 5px;
+}
+.menu a{
+    font-size: 15px;
+}
+/*termina lista ordinaria*/
+/*empieza lista ordinaria del usuario*/
+.usuario{
+    display: flex;
+    list-style: none;
+    width: 300px;
+}
+
+.usuario li{
+    position: relative;
+    display: flex;
+    background-color: #eed130;
+    left: 900px;
+    top: -30px;
+}
+.usuario a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.usuario button{
+    background-color: #eed130;    
+    border: 0;
+    padding: 5px;
+    cursor: pointer;
+}
+/*termina lista oridania de ususario*/
+/*empieza contenedor de compra*/
+.compra{
+    background-color: #cdcdcd;
+    height: 600px;
+    width: 950px;
+    position: absolute;
+    display: flex;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    box-shadow: #474e4b 10px 13px 37px 10px;
+}
+.compra img{
+    height: 70%;
+    width: auto;
+    margin-top: 85px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.text-compra{
+    display: block;
+    margin-left: 2px;
+    border-left: 2px solid #585858;
+    width: 500px;
+}
+
+.text-compra h2{
+    margin-top: 80px;
+    margin-left: 10px;
+}
+
+.colo{
+    display: flex;
+    margin-top: 5px;
+}
+
+.text-compra .cuadrado{
+    background-color: gold;
+    width: 15px;
+    height: 15px;
+    margin-top: 6px;
+    margin-left: 5px;
+}
+.text-compra .der-cua{
+    margin-left: 3px;
+}
+.text-compra .chain{
+    display: block;
+    width: 500px;
+    margin-top: 10px;
+}
+
+.chain .decp{
+    color: #000;
+}
+
+.chain desc{
+    display: flex;
+    margin-top: 10px;
+}
+
+.text-compra .prec{
+    display: block;
+    margin-bottom: 10px;
+    margin-top: -60px;
+}
+
+.text-compra .cositas{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.cositas b{
+    font-size: 15px;
+}
+
+.cositas li{
+    font-size: 15px;
+}
+.cositas .cosas{
+    padding: 10px;
+    margin-left: 15px;
+    font-size: 10px;
+}
+
+.comprado{
+    display: block;
+    margin-top: 80px;
+    margin-left: 350px;
+}
+
+.comprado .pago{
+    padding: 5px;
+    text-align: center;
+    border: 0;
+    border-radius: 5px;
+    width: 150px;
+}
+.comprado .comprar{
+    margin-top: 5px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #171576;
+    color: #FED85D;
+    height: 35px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+}
+/*termina div de compra*/
+/*empieza footer*/
+footer{
+    background-color: #eed130;
+    padding: 20px;
+    display: flex;
+    margin-top: 720px;
+}
+
+.footer p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 500px;
+}
+/*termina footer*/
